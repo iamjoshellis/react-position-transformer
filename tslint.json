@@ -1,0 +1,45 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:latest",
+    "tslint-eslint-rules",
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-clean-code",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": [true, ".prettierrc"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ],
+    "no-console": [true, "log"],
+    "arrow-return-shorthand": [true, "multiline"],
+    "no-this-assignment": [false, { "allow-destructuring": true }],
+    "no-unused": true,
+    "no-commented-out-code": true,
+    "jsx-use-translation-function": true,
+    "interface-name": false,
+    "jsx-no-lambda": false,
+    "object-literal-sort-keys": false,
+    "import-name": false,
+    "max-classes-per-file": false,
+    "no-empty-interface": false,
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false,
+    "member-access": false,
+    "jsx-boolean-value": false,
+    "no-boolean-literal-compare": false,
+    "prefer-array-literal": false,
+    "object-shorthand-properties-first": false,
+    "interface-over-type-literal": false,
+    "ordered-imports": false
+  },
+  "jsRules": {},
+  "rulesDirectory": []
+}

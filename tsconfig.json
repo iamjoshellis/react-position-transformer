@@ -1,0 +1,10 @@
+
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "rootDir": "src",
+    "outDir": "dist",
+    "lib": ["es2015", "dom"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
