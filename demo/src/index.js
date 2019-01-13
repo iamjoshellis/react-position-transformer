@@ -13,8 +13,8 @@ const OPTIONS = {
 };
 
 const getDestStyle = () => ({
-  top: `${number('dest top', 10, OPTIONS)}%`,
-  left: `${number('dest left', 10, OPTIONS)}%`,
+  top: `${number('dest top', 50, OPTIONS)}%`,
+  left: `${number('dest left', 50, OPTIONS)}%`,
 });
 
 class Story extends React.Component {

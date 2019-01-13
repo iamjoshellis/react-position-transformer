@@ -12,7 +12,6 @@ export const GlobalStyle = createGlobalStyle`
   #root {
     background: linear-gradient(to bottom right, #4286f4, #373B44);
     position: relative;
-    padding: 100px;
   }
 `;
 
