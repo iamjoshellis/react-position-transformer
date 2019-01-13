@@ -5,3 +5,34 @@
 [![npm](https://img.shields.io/npm/v/react-position-transformer.svg)](https://www.npmjs.com/package/react-position-transformer)
 
 Performantly transform one element's position to an others! 🚀
+
+## [Demo](https://react-position-transformer.netlify.com/)
+
+## Usage:
+```js
+import * as React from 'react';
+import Transformer from 'react-position-transformer';
+
+class MyComponent extends React.Component {
+  destRef = React.createRef();
+
+  render() {
+    return (
+      <React.Fragment>
+        <div ref={this.destRef}>
+          dest
+        </div>
+        <Transformer
+          transition={300}
+          transformed={this.props.transformed}
+          destRef={this.destRef.current}
+        >
+          <div>src</div>
+        </Transformer>
+      </React.Fragment>
+    );
+  }
+}
+```
+
+`src` will be "moved" (via css transforms) to `dest` when `transformed === true`.
