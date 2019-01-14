@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export type Props = {
   destRef: HTMLElement;
-  transformed: boolean;
+  transformed?: boolean;
   transition?: number;
   children: React.ReactNode;
 };

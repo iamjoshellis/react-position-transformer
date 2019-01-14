@@ -1,8 +1,9 @@
 {
   "name": "react-position-transformer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Performantly transform one element's position to an others! 🚀",
   "main": "dist/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "start": "tsc --watch",
     "build": "tsc"
