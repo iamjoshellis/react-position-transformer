@@ -28,7 +28,7 @@ class Transformer extends React.Component<Props> {
   srcRef = React.createRef<HTMLDivElement>();
 
   getOffset = () => {
-    const { transformed, destRef, transition } = this.props;
+    const { transformed, destRef } = this.props;
     let dx = 0;
     let dy = 0;
     if (transformed && this.srcRef.current && destRef) {
@@ -39,7 +39,10 @@ class Transformer extends React.Component<Props> {
       dy = destinationRect.top - rect.top + transform[1];
     }
     this.srcRef.current.style.transform = `translate(${dx}px, ${dy}px)`;
-    this.srcRef.current.style.transition = `transform ${transition}ms`;
+  };
+
+  setTransistion = () => {
+    this.srcRef.current.style.transition = `transform ${this.props.transition}ms`;
   };
 
   componentDidMount() {
@@ -51,12 +54,16 @@ class Transformer extends React.Component<Props> {
     window.setTimeout(() => {
       if (this.srcRef.current) {
         this.srcRef.current.style.opacity = '1';
-        this.srcRef.current.style.transition = `transform ${this.props.transition}ms`;
+        this.setTransistion();
       }
     });
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(nextProps: Props) {
+    const { transition } = nextProps;
+    if (this.props.transition !== transition) {
+      this.setTransistion();
+    }
     this.getOffset();
   }
 
