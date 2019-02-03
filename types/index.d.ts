@@ -8,5 +8,5 @@ declare module 'react-position-transformer' {
     children: React.ReactNode;
   };
 
-  export default class Transformer extends React.Component<Props, any> {}
+  export default class Transformer extends React.Component<Props> {}
 }

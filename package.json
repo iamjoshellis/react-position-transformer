@@ -1,6 +1,6 @@
 {
   "name": "react-position-transformer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Performantly transform one element's position to an others! 🚀",
   "main": "dist/index.js",
   "types": "./types/index.d.ts",
@@ -24,6 +24,7 @@
     "transforms"
   ],
   "devDependencies": {
+    "@types/react": "^16.8.1",
     "prettier": "^1.15.3",
     "tslint": "^5.12.1",
     "tslint-clean-code": "^0.2.9",

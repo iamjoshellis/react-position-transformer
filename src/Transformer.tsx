@@ -23,8 +23,6 @@ class Transformer extends React.Component<Props> {
     transition: 0,
   };
 
-  props: Props;
-
   srcRef = React.createRef<HTMLDivElement>();
 
   getOffset = () => {
