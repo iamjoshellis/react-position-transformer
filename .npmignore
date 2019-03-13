@@ -3,9 +3,17 @@
 
 # misc
 .DS_Store
+.editorconfig
+.prettierrc
+.travis.yml
+tsconfig
+tslint.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 #demo
 /demo
+
+#src
+/src
